@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 /*
 const geistSans = localFont({
@@ -29,10 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en"> 
       <body
-        className={`antialiased bg-gradient-to-b from-zinc-950 to-zinc-800 pl-5 pr-5 pt-5`} // the coloured background on every page h-screen bg-gradient-to-b from-indigo-800 to-zinc-950 pl-40 pr-40
+        className={`antialiased bg-gradient-to-b from-zinc-950 via-slate-900 to-slate-900 pl-5 pr-5 pt-5`} // the coloured background on every page h-screen bg-gradient-to-b from-indigo-800 to-zinc-950 pl-40 pr-40
       >
         <Header></Header> 
+      
         {children} 
+        
+        <Footer></Footer> 
       </body>
     </html>
   );
