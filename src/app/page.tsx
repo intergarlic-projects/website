@@ -1,6 +1,7 @@
+// change line 4 h-screen to make footer higher up the page
 export default function Page() {
   return <div> 
-    <div className="relative w-full h-screen pl-10 pr-10 pt-10">
+    <div className="relative w-full h-screen pl-10 pr-10 pt-10"> 
     <h1>kys</h1>
     <button className="bg-orange-600 hover:bg-orange-400 rounded-full w-15">
       orange
