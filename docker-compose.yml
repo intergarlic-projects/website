@@ -10,3 +10,5 @@ services:
       NODE_ENV: production
     ports:
       - 9107:9107
+    volumes:
+      - ./data:/usr/src/app

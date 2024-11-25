@@ -2,7 +2,6 @@ FROM node:lts-alpine
 RUN apk update
 RUN apk upgrade
 RUN apk add git
-ENV NODE_ENV=production
 WORKDIR /usr/src/app
 RUN git clone https://github.com/intergarlic-projects/website.git .
 RUN npm install --silent && mv node_modules ../
