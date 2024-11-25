@@ -1,0 +1,12 @@
+services:
+  intergarlic-website:
+    image: intergarlic-website
+    container_name: intergarlic-website
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 9107:9107
